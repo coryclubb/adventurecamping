@@ -2,69 +2,75 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
-  font-size: 1.35em;
-	font-family: monospace, sans-serif;
-	color: #fff;
   background-color: #9d4527;
   background-image: linear-gradient(#5B382C, #9d4527);
   background-repeat: no-repeat;
+	color: #fff;
+	font-family: monospace, sans-serif;
+  font-size: 1.35rem;
 }
 
-.btn {
-  outline: none;
-  height: 50px;
-  width: 160px;
+button {
+  background-color: #89a500;
   border-radius: 15px;
-  font-family: sans-serif;
-  font-size: 20px;
-  color: #fff;
-  background-color: gray;
   border: none;
+  color: #fff;
   cursor: pointer;
+  font-size: 1.1rem;
+  padding: 15px 50px;
   margin: 20px;
+  outline: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.btn:hover {
-  background:#89a500;
+button:hover {
+  background-color: #A7C126;
 }
 
 .logo {
-  margin: auto;
-  margin-top: 50px;
-  height: 274px;
-  width: 300px;
   background-image: url(../img/camp-logo-small.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 90vw;
+  margin: 50px auto auto auto;
+  max-height: 274px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .container {
+  margin: 20px auto;
   max-width: 340px;
-	background: none;
-  border-radius: 5px;
-  margin: 20px auto;
   text-align: center;
 }
 
-.item {
-  outline: none;
-  width: 100%;
-  text-align: center;
-  font-size: 25px;
-  font-family: monospace,sans-serif;
-	color: #89a63d;
-  padding: 20px 0;
+input {
 	border-radius: 15px;
+	color: #89a63d;
   border: 5px solid white;
+  font-family: monospace,sans-serif;
+  font-size: 1.3rem;
   margin: 20px auto;
+  outline: none;
+  padding: 20px;
+  text-align: left;
+  transition: border-color 0.2s ease-in-out;
+  width: 100%;
 }
 
-.item:focus {
+input:focus {
   border-color: #89a63d;
 }
 
 footer {
-  margin-top: 50px;
-  font-size: 16px;
   color: #ffd200;
+  font-size: 0.9rem;
+  margin: 50px auto;
   text-align: center;
 }
